@@ -160,5 +160,11 @@
   <script src="node_modules/animejs/lib/anime.min.js"></script>
   <script src="./js/app.js"></script>
   <script src="./js/gradient.js"></script>
+  <script>
+    window.addEventListener('beforeunload', (event) => {
+      event.preventDefault();
+      event.returnValue = '';
+    });
+  </script>
 </body>
 </html>
